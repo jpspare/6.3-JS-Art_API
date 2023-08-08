@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" 
+        rel="stylesheet">
+    <script src="main.js" defer></script>
+    <title>Sample of Art from AIC</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-right">
+            <nav>
+                <h1 class="nav-header">A Sampling of Fine Art</h1>
+            </nav>
+        </div>
+        <div class="nav-left">
+            <nav>
+                <h3 class="nav-tag">Courtesy of the Art Institute of Chicago</h3>
+            </nav>
+        </div> 
+    </header>
+
+    <!-- Photo Gallery -->
+    <div class="photo-container">
+        <ul class="photo-gallery">
+            <li class="photo-li" id="img_1" onmouseover="getArtInfo(this.id)">
+                <div class="gallery_item_container">
+                    <img src="https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg"
+                        alt="Seurat - 'A Sunday on La Grande Jatte — 1884'" 
+                        class="gallery_item gallery_item_1">
+                </div>
+                <div class="overlay">
+                    <table class="overlay-table">
+                        <tr class="art_name">
+                            <td class="overlay-title art_name-title">Title:</td>
+                            <td class="overlay-content art_name-content" 
+                            id="art_name-content-1">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="artist_name">
+                            <td class="overlay-title artist_name-title">Artist:</td>
+                            <td class="overlay-content artist_name-content"
+                            id="artist_name-content-1">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="medium">
+                            <td class="overlay-title medium-title">Medium:</td>
+                            <td class="overlay-content medium-content"
+                            id="medium-content-1">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="date">
+                            <td class="overlay-title date-title">Date:</td>
+                            <td class="overlay-content date-content"
+                            id="date-content-1">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="place_of_origin">
+                            <td class="overlay-title place_of_origin-title">Place of Origin:</td>
+                            <td class="overlay-content place_of_origin-content"
+                            id="place_of_origin-content-1">Information Loading - Please Hold</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="photo-li" id="img_2" onmouseover="getArtInfo(this.id)">
+                <div class="gallery_item_container">
+                    <img src="https://www.artic.edu/iiif/2/9e00e226-9264-cda0-2893-685e0ca5b285/full/843,/0/default.jpg"
+                        alt="Kandinsky = 'Improvisation No. 30 (Cannons)'" 
+                        class="gallery_item gallery_item_2">
+                </div>
+                <div class="overlay">
+                    <table class="overlay-table">
+                        <tr class="art_name">
+                            <td class="overlay-title art_name-title">Title:</td>
+                            <td class="overlay-content art_name-content" 
+                            id="art_name-content-2">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="artist_name">
+                            <td class="overlay-title artist_name-title">Artist:</td>
+                            <td class="overlay-content artist_name-content"
+                            id="artist_name-content-2">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="medium">
+                            <td class="overlay-title medium-title">Medium:</td>
+                            <td class="overlay-content medium-content"
+                            id="medium-content-2">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="date">
+                            <td class="overlay-title date-title">Date:</td>
+                            <td class="overlay-content date-content"
+                            id="date-content-2">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="place_of_origin">
+                            <td class="overlay-title place_of_origin-title">Place of Origin:</td>
+                            <td class="overlay-content place_of_origin-content"
+                            id="place_of_origin-content-2">Information Loading - Please Hold</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="photo-li" id="img_3" onmouseover="getArtInfo(this.id)">
+                <div class="gallery_item_container">
+                    <img src="https://www.artic.edu/iiif/2/0f1cc0e0-e42e-be16-3f71-2022da38cb93/full/843,/0/default.jpg"
+                        alt="Monet - 'Arrival of the Normandy Train, Gare Saint-Lazare'" 
+                        class="gallery_item gallery_item_3">
+                </div>
+                <div class="overlay">
+                    <table class="overlay-table">
+                        <tr class="art_name">
+                            <td class="overlay-title art_name-title">Title:</td>
+                            <td class="overlay-content art_name-content" 
+                            id="art_name-content-3">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="artist_name">
+                            <td class="overlay-title artist_name-title">Artist:</td>
+                            <td class="overlay-content artist_name-content"
+                            id="artist_name-content-3">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="medium">
+                            <td class="overlay-title medium-title">Medium:</td>
+                            <td class="overlay-content medium-content"
+                            id="medium-content-3">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="date">
+                            <td class="overlay-title date-title">Date:</td>
+                            <td class="overlay-content date-content"
+                            id="date-content-3">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="place_of_origin">
+                            <td class="overlay-title place_of_origin-title">Place of Origin:</td>
+                            <td class="overlay-content place_of_origin-content"
+                            id="place_of_origin-content-3">Information Loading - Please Hold</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            <li class="photo-li" id="img_4" onmouseover="getArtInfo(this.id)">
+                <div class="gallery_item_container">
+                    <img src="https://www.artic.edu/iiif/2/b3974542-b9b4-7568-fc4b-966738f61d78/full/843,/0/default.jpg"
+                        alt="Hokusai - 'Under the Wave off Kanagawa'" 
+                        class="gallery_item gallery_item_4">
+                </div>
+                <div class="overlay">
+                    <table class="overlay-table">
+                        <tr class="art_name">
+                            <td class="overlay-title art_name-title">Title:</td>
+                            <td class="overlay-content art_name-content" 
+                            id="art_name-content-4">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="artist_name">
+                            <td class="overlay-title artist_name-title">Artist:</td>
+                            <td class="overlay-content artist_name-content"
+                            id="artist_name-content-4">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="medium">
+                            <td class="overlay-title medium-title">Medium:</td>
+                            <td class="overlay-content medium-content"
+                            id="medium-content-4">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="date">
+                            <td class="overlay-title date-title">Date:</td>
+                            <td class="overlay-content date-content"
+                            id="date-content-4">Information Loading - Please Hold</td>
+                        </tr>
+                        <tr class="place_of_origin">
+                            <td class="overlay-title place_of_origin-title">Place of Origin:</td>
+                            <td class="overlay-content place_of_origin-content"
+                            id="place_of_origin-content-4">Information Loading - Please Hold</td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
